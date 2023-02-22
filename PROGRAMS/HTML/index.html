@@ -1,0 +1,136 @@
+<!DOCTYPE>
+<!DOCTYPE html>
+<html lang="en-IN">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>HOME</title>
+        <meta name="description" content="tutorial, html, css, javascript">
+        <meta name="author" content="Keval Parmar">
+        <meta http-equiv="refresh" content="30">
+        <link rel="shortcut icon" href="favicon.png" type="image/x-icon">
+        <meta name="description" content="TUTORIAL">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="style.css">
+        <style>
+            body {
+                background-color: rgb(238, 130, 238, 0.5);
+            }
+            .class {
+                color: blue;
+            }
+        </style>
+    </head>
+    <body>
+        <p>HTML</p>
+        <p>Tell browser how to display web page</p>
+        <p>WWW - Tim Berners Lee</p>
+        <p><a href="https://baps.org" target="_blank">BAPS</a></p>
+        <p><img src="BAPS.jpg" alt="BAPS" width="50%" height="auto"></p>
+        <p>Tag are not case sensitive</p>
+        <img src="https://avante.biz/wp-content/uploads/Baps-Wallpapers/Baps-Wallpapers-021.jpg" alt="Baps-Wallpapers-021" width="50%" height="auto">
+        <p style="color: red; font-style: italic; font-size: 50px;" title="This is style">Style</p>
+        <P>hello</P>
+        <hr>
+        <p>world</p>
+        <p>hello <br> world</p>
+        <pre style="background-color: pink; color: blue; font-family: 'Courier New', Courier, monospace; font-size: large; text-align: left;">
+            Hii
+            My name is Keval
+        </pre>
+        <p><a href="#p1">Jump</a></p>
+        <p><b><i>Hello World</i></b></p>
+        <p style="font-size: 20px;">log<sub>10</sub>5<sup>2</sup></p>
+        <p><em>Keval</em></p>
+        <p><mark>Keval</mark></p>
+        <p><del>Keval</del></p>
+        <p><ins>Keval</ins></p>
+        <p><blockquote>Hii My name is Keval Parmar. My hobby is learning new skill. My home town is ahmedabad. I love to watch movies and serials.</blockquote></p>
+        <p><q>Hii My name is Keval</q></p>
+        <p><abbr title="World Wide Web">WWW</abbr></p>
+        <p><address>09, Navdeep Palace,<br> Hirawadi, Ahmedabad - 382345</address></p>
+        <img src="BAPS.jpg" alt="BAPS" width="50%" height="auto">
+        <p><cite>BAPS IMAGE</cite></p>
+        <p><bdo dir="rtl">KEVAL</bdo></p>
+        <!-- Comment -->
+        <p style="border: 2px solid blue; background-color: rgb(238,130,238,0.5);">Hello World</p>
+        <p>HSLA hue saturation lightness</p>
+        <p>ligntness 0% black 100% white</p>
+        <p>hue 0 red 120 green 240 blue</p>
+        <p>RGBA red blue green - rgb(0,0,0) black rgb(255,255,255) white</p>
+        <p>rgb(255,0,0) red rgb(0,255,0) green rgb(0,0,255) blue</p>
+        <p>HEX hexadecimal -  #000000 black #ffffff white</p>
+        <p>#ff0000 red #00ff00 green #0000ff blue</p>
+        <p><a href="mailto:keval.exam@gmail.com">keval.exam@gmail.com</a></p>
+        <button onclick="myfunction()">Submit</button>
+        <p id="p1"></p>
+        <p>
+            <table>
+                <caption>Details</caption>
+                <thead>
+                    <tr>
+                        <th>Name</th>
+                        <th>Year</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Keval</td>
+                        <td>2000</td>
+                    </tr>
+                </tbody>
+            </table>
+        </p>
+        <p>
+            <ul style="list-style-type: square;">
+                <li>1</li>
+                <li>2</li>
+                <li>3</li>
+            </ul>
+            <ol type="A">
+                <li>11</li>
+                <li>22</li>
+                <li>33</li>
+            </ol>
+            <dl>
+                <dt>Tea</dt>
+                <dd>- Tea is a drink</dd>
+            </dl>
+            <ul style="margin: 0; padding: 0; overflow: hidden; background-color: lightblue; list-style-type: none;">
+                <li style="float: left;">Home</li>
+                <li style="float: left;">About</li>
+                <li style="float: left;">Contact</li>
+            </ul>
+        </p>
+        <p>Div is used as block level</p>
+        <p>Span is used as inline level</p>
+        <p class="class">Class example</p>
+        <p id="myHeader">Hello World</p>
+        <p><button onclick="display()">Change</button></p>
+        <iframe src="keval.html" height="200px" width="300px"></iframe>
+        <p>
+            <header></header>
+            <nav></nav>
+            <section></section>
+            <article></article>
+            <aside></aside>
+            <footer></footer>
+        </p>
+        <p><code>x=5; y=6; z=x+y;</code></p>
+        <p><kbd>Ctrl + S</kbd></p>
+        <p><samp>File not found</samp></p>
+        <p>Area is: <var>1/2</var></p>
+    </body>
+    <script>
+        function myfunction() {
+            alert("Clicked");
+        }
+        let x = document.getElementsByClassName("class");
+        for (let i=0; i<x.length; i++) {
+            x[i].style.display = "none";
+        }
+        function display() {
+            document.getElementById("myHeader").innerHTML = "Have a nice day"
+        }
+    </script>
+</html>

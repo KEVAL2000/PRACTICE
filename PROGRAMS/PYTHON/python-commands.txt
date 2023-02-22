@@ -1,0 +1,38 @@
+Python Commands:
+python --version
+
+python -m venv myenv
+myenv\Scripts\activate
+
+python -m pip install --upgrade pip
+
+python -m pip install django
+python -m pip install django-rest-framework
+python -m pip install django-cors-headers
+
+
+django-admin startproject myfirst
+cd myfirst
+python manage.py runserver
+python manage.py startapp members
+
+python manage.py makemigrations members
+python manage.py migrate
+python manage.py sqlmigrate members 0001
+python manage.py shell
+
+from members.models import Member
+Member.objects.all()
+member = Member(firstname='', lastname='')
+member.save()
+Member.objects.all().values()
+
+python manage.py collectstatic
+python manage.py createsuperuser
+
+npx create-react-app myfirst
+cd myfirst
+npm start
+
+npm install react-bootstrap bootstrap
+npm install --save react-router-dom

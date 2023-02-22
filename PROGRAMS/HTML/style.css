@@ -1,0 +1,24 @@
+body {
+    border: 1px solid black !important;
+    padding: 10px !important;
+}
+a:link {
+    color:green;
+    text-decoration: none;
+}
+a:visited {
+    color: blue;
+    text-decoration: none;
+}
+a:hover {
+    color: red;
+    text-decoration: underline;
+}
+a:active {
+    color: yellow;
+    text-decoration: underline;
+}
+table, caption, th, td {
+    border: 1px solid black;
+    border-collapse: collapse;
+}
